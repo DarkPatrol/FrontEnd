@@ -136,7 +136,7 @@ nav{
 	display: block;
 }
 .container_text {
-	font-size: 0%;
+	font-size: 120%;
 }
 @media screen and (max-width: 1440px){
 	.nav-links{

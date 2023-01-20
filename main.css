@@ -101,9 +101,11 @@ nav{
 	transform: translateX(0%);
 }
 .content{
-	margin: 11% 2% 11% 2%;
-	display: block;
+	display: flex;
+	justify-content: space-between;
 	position: relative;
+	flex-direction: column;
+	margin: 10% 0% 10% 0%;
 }
 .content p{
 	margin: 1%;

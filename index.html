@@ -40,7 +40,7 @@
 			</div>
 		</div>
 		<div class="container">
-		sd	
+			<canvas id="myskills" width="100px" height="100px" ></canvas>
 		</div>
 		<div class="container">
 			<div class="container_img">
@@ -61,6 +61,29 @@
 			</div>
 		</div>
 </div>
-<script src="script.js"></script>
+
+<script src="scriptburger.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="myskills.js"></script>
+<!--<script>
+  const ctx = document.getElementById('myskills').getContext('2d');
+	new Chart(ctx,{
+	type: 'bar',
+	data:{
+		labels: ['Html','Css','Js','Php'] ,
+		datasets: [{
+			label:'Мои навыки' ,
+			data:[20,30,60,90] ,
+			backgroundColor:['red','yellow','blue','green'] ,
+			borderColor:[
+				'red','yellow','blue','green'
+			] ,
+			borderWidth: 4 
+	}],
+	} ,
+	options: {}
+});
+</script>
+-->
 </body>
 </html>

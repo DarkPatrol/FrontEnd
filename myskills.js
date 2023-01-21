@@ -1,11 +1,11 @@
 const ctx = document.getElementById('myskills').getContext('2d');
 let myskills= new Chart(ctx,{
-	type: 'radar',
+	type: 'doughnut',
 	data:{
 		labels: ['Html','Css','Js','Php'] ,
 		datasets: [{
 			label:'Мои навыки' ,
-			data: [20,30,60,90] ,
+			data: [40,60,30,10] ,
 			backgroundColor: ['red','yellow','blue','green'] ,
 			borderColor:[
 				'black'

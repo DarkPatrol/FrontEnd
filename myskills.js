@@ -34,15 +34,6 @@ var chartOptions = {
   rotation: -90,
   cutout: "45%",
   plugins: {
-    title: {
-      display: true,
-      position: "bottom",
-			align: "justify",
-      text: "Мои навыки",
-      font: {
-        size: 32
-      }
-    },
     legend: {
       position: "left",
       align: "start"

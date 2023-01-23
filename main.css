@@ -152,7 +152,7 @@ nav{
 	width: 50%;
 	padding: 20px;
 	border-radius: 20px;
-	border: solid 3px rgba(54, 162, 235, 1);
+	/*border: solid 3px rgba(54, 162, 235, 1);*/
 	background: white;
 }
 

@@ -1,7 +1,12 @@
-body{
+body {
 	margin: 0;
 	background-color: rgb(228, 228, 228);
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-#canvas{
-	background-color: white;
+
+#canvas {
+	background-color: #fff;
 }

@@ -1,7 +1,7 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d')
 
-// Рисуем вертикальный луч
+// Draw vertical ray
 function drawVerticalRay(x, color = 'black') {
     ctx.beginPath();
     ctx.moveTo(x, 0);
@@ -10,7 +10,7 @@ function drawVerticalRay(x, color = 'black') {
     ctx.stroke();
 }
 
-// Рисуем горизонтальный луч
+// Draw horizontal ray
 function drawHorizontalRay(y, color = 'black') {
     ctx.beginPath();
     ctx.moveTo(0, y);
@@ -19,7 +19,7 @@ function drawHorizontalRay(y, color = 'black') {
     ctx.stroke();
 }
 
-// Рисуем точку
+// Draw poin
 function drawPoint(point) {
     ctx.beginPath();
     ctx.ellipse(point.x, point.y, 10, 10, Math.PI / 4, 0, 2 * Math.PI);
@@ -27,7 +27,7 @@ function drawPoint(point) {
     ctx.fill();
 }
 
-// Рисуем прямоугольник
+// Draw rect
 // rect - объект типа {x: 12, y: 12, width: 21, height: 44, color: 'green'}
 function drawRect(rect) {
     ctx.beginPath();
@@ -36,7 +36,7 @@ function drawRect(rect) {
     ctx.fill();
 }
 
-// Рисуем круг
+// Draw circle
 // circle - объект типа {x: 12, y: 12, radius: 32, color: 'green'}
 function drawCircle(circle) {
     ctx.beginPath();
@@ -80,7 +80,7 @@ function checkCircleRectCollision(circle, rect) {
     return (dx * dx + dy * dy <= (circle.radius * circle.radius));
 }
 
-// Произвольное число
+//random numb
 function getRandom(min, max) {
     return Math.random() * (max - min) + min;
 }
@@ -108,7 +108,7 @@ let rect = {
     color: 'blue'
 }
 
-// События
+// events
 const pressed = {}
 canvas.addEventListener('mousemove',function(event){
 	  rect.x = event.offsetX
@@ -142,7 +142,7 @@ function render() {
     }
 
 
-    // Движение
+    // motion
     for (const ball of balls) {
         ball.x = ball.x + ball.dx
         ball.y = ball.y + ball.dy
@@ -168,7 +168,7 @@ function render() {
 
     }
 
-    //Отрисовка
+    //render
     for (const ball of balls) {
         drawCircle(ball)
     }

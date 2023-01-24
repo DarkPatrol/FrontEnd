@@ -1,40 +1,30 @@
 const c = document.getElementById('canvas');
 const ctx= canvas.getContext('2d')
 
-function drawVerticalRay(x, color = 'black') {
+function drawPoint(point) {
 	ctx.beginPath();
-	ctx.moveTo(x, 0);
-	ctx.lineTo(x, c.height);
-	ctx.strokeStyle = color
-	ctx.stroke();
-}
-function drawPoint(x, y, color = 'black') {
-	ctx.beginPath();
-	ctx.ellipse(x, y, 10, 10, Math.PI / 4, 0, 2 * Math.PI);
-	ctx.fillStyle = color
+	ctx.ellipse(point.x, point.y, 10, 10, Math.PI / 4, 0, 2 * Math.PI);
+	ctx.fillStyle = point.color
 	ctx.fill();
 }
 
-let xA=0
-let xB=1500
+let point={
+	x:0,
+	y:0,
+	color:'black'
+}
+
+
+canvas.addEventListener('mousemove',function(event){
+	point.x=event.offsetX
+	point.y=event.offsetY
+})
 
 function render(){
-	ctx.clearRect(0,0,c.width,c.height)
-
-	xA= xA+2
-
-	if(xA > xB){
-		drawVerticalRay(xB,'red');
-	}
-	else{
-		drawVerticalRay(xB,'purple');
-	}
-	if(xA>1920){
-		xA=0;
-	}
-
-	drawPoint(xA,540,'black');
+	ctx.clearRect(0,0,canvas.width,canvas.height);
 	
+	drawPoint(point)
+
 	window.requestAnimationFrame(render)
 }
 window.requestAnimationFrame(render)

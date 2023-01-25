@@ -6,13 +6,18 @@
 
 html,body{
 	overflow-x: hidden;
-	/*background-image:url('images/bgImg.jpg');
+	background-image:url('images/bgImg.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% 100%;
-	object-fit: fill;*/
+	object-fit: fill;
+	background-image: radial-gradient(deepskyblue, purple);
 }
+::-webkit-scrollbar {
 
+width: 0px;
+
+}
 nav{
 	padding: 15px 10px;
 	display: flex;

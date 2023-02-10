@@ -47,13 +47,14 @@
   font-weight: normal;
   color: #102746;
 }
-
 .wrapper {
   max-width: 1060px;
   margin: 0 auto;
 }
+
+/*header styles start*/
+
 .header {
-  background-color: black;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -86,3 +87,15 @@
 .header_link:hover, .header_link:focus,.header_link:active{
 	opacity: .75;
 }
+
+/*header styles end*/
+
+/*intro styles start*/
+
+.intro{
+	height: 100vh;
+	background: url(../img/intro-bg.jpg) no-repeat center;
+	background-size: cover;
+}
+
+/*intro styles end*/

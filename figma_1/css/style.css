@@ -82,6 +82,11 @@ img {
   bottom: 0;
   left: 0;
 }
+/* scrooll-bar */
+::-webkit-scrollbar {
+  display: none;
+}
+
 
 /* Header styles start */
 
@@ -90,6 +95,12 @@ img {
   top: 0;
   left: 0;
   width: 100%;
+  transition: 0.2s linear;
+  padding-bottom: 20px;
+  z-index: 60;
+}
+.header_active {
+  background: rgba(21, 24, 36, 0.6);
 }
 .header__wrapper {
   display: flex;
@@ -412,9 +423,9 @@ img {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 57px;
 }
-.top_card{
-	display: flex;
-	flex-direction: column;
+.top_card {
+  display: flex;
+  flex-direction: column;
 }
 .top_card-pic {
   position: relative;
@@ -458,7 +469,6 @@ img {
   background: url(../img/svg/comment-ico.svg) no-repeat right;
 }
 .top_card-desc {
-	font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -467,17 +477,79 @@ img {
   margin-bottom: 31px;
 }
 .top_card-more {
-	width:118px;
-	padding: 12px 19px;
+  width: 118px;
+  padding: 12px 19px;
   font-size: 16px;
   line-height: 19px;
-	text-decoration: none;
+  text-decoration: none;
   color: #ffffff;
-	background: #006DFE;
-	margin: auto 0 0 0;
+  background: #006dfe;
+  margin: auto 0 0 0;
 }
-.top_card-more:hover,.top_card-more:focus,.top_card-more:active{
-	background: #0e66da;
+.top_card-more:hover,
+.top_card-more:focus,
+.top_card-more:active {
+  background: #0e66da;
 }
 
 /* top places styles end */
+
+/* videos styles start  */
+
+.videos {
+  width: 100%;
+}
+.videos_wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+	position: relative;
+}
+.video_item{
+	padding-top: 56.25%;
+}
+.video_element{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* videos styles end  */
+
+/* footer styles start */
+
+.footer{
+	background: #0E1D28;
+	padding: 119px 0;
+}
+.footer_item{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer_logo{
+	width: 50%;
+}
+.footer_nav{
+	width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.footer_menu-title{
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24px;
+	color: white;
+}
+.footer_menu-link{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: white;
+	text-decoration: none;
+}
+.footer_menu-link:hover,.footer_menu-link:active,.footer_menu-link:focus{
+	opacity: 0.72;
+}
+/* footer styles end */

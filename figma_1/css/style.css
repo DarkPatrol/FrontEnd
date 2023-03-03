@@ -739,6 +739,51 @@ img {
 	.places_card-pic_lg,.places_card-pic_sm{
 		height: 230px;
 	}
+	.places_view-all{
+		margin-bottom: 25px;
+	}
+	.places_caption{
+		margin-bottom: 0;
+	}
+	.tour_pic,.tour_info{
+		grid-column: span 2;
+	}
+	.tour_pic{
+		margin-bottom: 12px;
+	}
+	.tour_pic_mob-first{
+		grid-row-start: -1;
+	}
+	.tours_tour{
+		margin-bottom: 50px;
+	}
+	.tours{
+		margin-bottom: 76px;
+	}
+	.top_card{
+		grid-column: span 6;
+	}
+	.top_card_stats{
+		max-width: 386px;
+	}
+	.top_card-desc{
+		margin-bottom: 15px;
+	}
+	.top{
+		margin-bottom: 76px;
+	}
+	.footer_logo{
+		width: 100%;
+		margin-bottom: 24px;
+		margin-left: 55px;
+	}
+	.footer_nav{
+		width: 100%;
+	}
+	.footer_menu{
+		width: 50%;
+		margin-bottom: 24px;
+	}
 }
 @media screen and (max-width:500px){
 	.header__nav{
